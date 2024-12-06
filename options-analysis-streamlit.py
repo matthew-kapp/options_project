@@ -1,6 +1,19 @@
+import sys
+import subprocess
+
+# Install packages if not already installed
+def install(package):
+    subprocess.check_call([sys.executable, "-m", "pip", "install", package])
+
+try:
+    import matplotlib.pyplot as plt
+except ImportError:
+    install('matplotlib')
+    import matplotlib.pyplot as plt
+
 import streamlit as st
 import pandas as pd
-import matplotlib.pyplot as plt
+# import matplotlib.pyplot as plt
 
 # Import the backend function
 from functions import backend
