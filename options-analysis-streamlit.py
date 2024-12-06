@@ -16,7 +16,7 @@ def main():
                                 min_value=0, 
                                 value=1)
     DTE_min = st.sidebar.number_input('Minimum Days to Expiration (DTE)', 
-                                min_value=0
+                                min_value=0,
                                 value=0)
     volume_min = st.sidebar.number_input('Minimum Volume', 
                                          min_value=0, 
