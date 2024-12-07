@@ -3,7 +3,7 @@ import pandas as pd
 from matplotlib import pyplot as plt
 
 # Import the backend function
-from functions import backend
+from .functions import backend
 
 def main():
     st.title('Options Analysis Dashboard')
