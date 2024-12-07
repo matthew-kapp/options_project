@@ -2,3 +2,6 @@ matplotlib
 streamlit
 pandas
 functions
+yfinance
+numpy
+scipy
